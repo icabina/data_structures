@@ -57,7 +57,7 @@ function mySet() {
   //this method will return the intersection of two sets as new set
   this.intersection = function (otherSet) {
     let intersectionSet = new Set();
-    let firstSet = this.value();
+    let firstSet = this.values();
     firstSet.forEach(function (e) {
       //for each we check if otherSet has it
       if (otherSet.has(e)) {
@@ -71,7 +71,7 @@ function mySet() {
   this.difference = function (otherSet) {
     let differenceSet = new mySet();
     let firstSet = this.values();
-    firstSet.forEach(function () {
+    firstSet.forEach(function (e) {
       if (!otherSet.has(e)) {
         differenceSet.add(e); //adds when theres no duplicate
       }
