@@ -2,6 +2,7 @@
 
 console.log("=====================================================");
 //create stack
+//first in , last out
 
 class Stack {
   constructor(value) {
@@ -14,7 +15,7 @@ class Stack {
       this.count++;
     };
 
-    //removes and returns value at end of stac
+    //removes and returns value at end of stack
     this.pop = function () {
       if (this.count === 0) {
         //nothing in stack

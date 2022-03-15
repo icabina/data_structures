@@ -1,7 +1,7 @@
 "use strict";
 
 console.log("=====================================================");
-//QUEUE
+//QUEUE :: first in and first out
 
 function Queue() {
   let collection = [];
@@ -13,7 +13,7 @@ function Queue() {
     return collection.push(element);
   };
   this.dequeue = function () {
-    return collection.shift(); //shift removes first, pop removes last / returns it
+    return collection.shift(); //SHIFT removes first and returns it, POP removes last and returns it
   };
   this.front = function () {
     return collection[0]; //same as shift without removing item

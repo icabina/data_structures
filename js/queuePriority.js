@@ -7,13 +7,18 @@ function PriorityQueue() {
   this.printCollection = function () {
     console.log(collection);
   };
+
   this.enqueue = function (element) {
     if (this.isEmpty()) {
+      //check if queue is empty
       collection.push(element);
     } else {
       let added = false;
       for (let i = 0; i < collection.length; i++) {
-        if (element[i] < collection[i][1]) {
+        // [0] ITEM
+        // [1] PRIORITY
+        if (element[1] < collection[i][1]) {
+          //check priority in each item of collection
           //checking
           collection.splice(i, 0, element);
           added = true;

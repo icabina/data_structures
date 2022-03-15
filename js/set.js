@@ -5,7 +5,7 @@ console.log("=====================================================");
 function mySet() {
   let collection = [];
   this.has = function (element) {
-    return collection.indexOf(element) !== -1; //boolean
+    return collection.indexOf(element) !== -1; //boolean, if is not negative 1, then is true
   };
 
   //this method will return all the values in the set
@@ -56,7 +56,7 @@ function mySet() {
 
   //this method will return the intersection of two sets as new set
   this.intersection = function (otherSet) {
-    let intersectionSet = new Set();
+    let intersectionSet = new mySet();
     let firstSet = this.values();
     firstSet.forEach(function (e) {
       //for each we check if otherSet has it
