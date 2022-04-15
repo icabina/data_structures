@@ -2,6 +2,7 @@
 
 console.log("=====================================================");
 //hashtable
+// are associative arrays, key value pairs
 
 let hash = (string, max) => {
   //string that we want to hash
